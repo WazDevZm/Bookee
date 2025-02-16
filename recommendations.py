@@ -3,6 +3,8 @@ import pickle
 from surprise import Dataset, Reader, SVD
 from surprise.model_selection import train_test_split
 
+from data_processing import load_data
+
 def train_model():
     books, users, ratings = load_data()
     
